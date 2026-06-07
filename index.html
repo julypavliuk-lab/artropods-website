@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artropods — Production Company</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800;900&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── SPLASH ── -->
+<div id="splash">
+  <div id="splash-bg"></div>
+  <div id="splash-center">
+    <nav id="splash-menu">
+      <a href="#projects" onclick="dismissSplash()">Projects</a>
+      <a href="#about-wrap" onclick="dismissSplash()">About</a>
+      <a href="#contact" onclick="dismissSplash()">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<!-- ── NAVIGATION ── -->
+<nav id="main-nav">
+  <div class="nav-left">
+    <a href="#" onclick="closeProject(); window.scrollTo({top:0,behavior:'smooth'}); return false;" class="logo">ARTROPODS.FILM</a>
+    <div class="tagline">Still &amp; Moving Image Lab</div>
+  </div>
+  <div class="nav-center">
+    Film Production<br>
+    Documentary<br>
+    Branded Content
+  </div>
+  <div class="nav-right">
+    <a href="#projects" onclick="closeProject()">Projects</a>
+    <a href="#about-wrap" onclick="closeProject()">About</a>
+    <a href="#contact" onclick="closeProject()">Contact</a>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="home">
+  <h1 class="hero-title">ARTROPODS</h1>
+  <div class="hero-sub">Barcelona / London / Worldwide</div>
+  <div class="hero-scroll">↓ Scroll</div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects" class="section">
+  <div class="section-label">Projects</div>
+
+  <a class="project-item" href="#" onclick="openProject('white-deer'); return false;"
+     data-preview="01-WHITE-DEER/Poster.jpeg">
+    <span class="project-number">01</span>
+    <span class="project-title">White Deer</span>
+    <span class="project-meta">Short Film, Mixed Media<br>Branded Content — 2026</span>
+  </a>
+
+  <a class="project-item" href="#" onclick="openProject('climb-to-heal'); return false;"
+     data-preview="02-CLIMB-TO-HEAL/ClimbToHeal_Poster_FullRes.jpg">
+    <span class="project-number">02</span>
+    <span class="project-title">Climb to Heal</span>
+    <span class="project-meta">Short Film, Documentary<br>2026</span>
+  </a>
+
+  <a class="project-item placeholder" href="#">
+    <span class="project-number">03</span>
+    <span class="project-title">Could Be Yours</span>
+    <span class="project-meta">— Coming Soon —</span>
+  </a>
+
+  <a class="project-item placeholder" href="#">
+    <span class="project-number">04</span>
+    <span class="project-title">Could Be Yours</span>
+    <span class="project-meta">— Coming Soon —</span>
+  </a>
+
+  <a class="project-item placeholder" href="#">
+    <span class="project-number">05</span>
+    <span class="project-title">Could Be Yours</span>
+    <span class="project-meta">— Coming Soon —</span>
+  </a>
+</section>
+
+<!-- ── ABOUT ── -->
+<div id="about-wrap">
+  <div class="section-label">About Artropods</div>
+  <div id="about">
+    <div class="about-left">
+      <div class="about-duo">
+        <div class="about-person-line"><a href="https://www.julyonset.com" target="_blank" class="about-person-link">Juliia Pavliuk</a> — Producer / Director</div>
+        <div class="about-person-line"><a href="https://www.dnedria.com" target="_blank" class="about-person-link">Dmytro Nedria</a> — Cinematographer / Photographer / Director</div>
+      </div>
+      <div class="about-location">Based between Barcelona &amp; London. Operating Worldwide.</div>
+    </div>
+    <div class="about-right">
+      <div class="about-text">
+        <p>We're a creative duo running an independent production company between Barcelona and London, developing our own projects while also producing and servicing work for others.</p>
+        <p>Together, we build projects that live between cultures, formats, and worlds — mixing cinematic storytelling, strong visual language, fashion sensibility, documentary instinct, commercial precision and hybrid image-making approaches.</p>
+        <p>We don't really believe in creative boxes.<br>Or normal production limits.</p>
+        <p>We love mixing international crews, strange references, beautiful accidents, cinematic thinking, internet culture, and real human stories into something that feels alive.</p>
+        <p>Sometimes it's a film crew in the middle of nowhere.<br>
+        Sometimes it's a two-person run-and-gun setup.<br>
+        Sometimes it's a full commercial machine held together by coffee, taste, and production magic.</p>
+        <p>We work fast.<br>We care too much.<br>We only make things we actually believe in.<br>Operating worldwide.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── CONTACT ── -->
+<section id="contact" class="section">
+  <div class="section-label">Contact</div>
+
+  <a class="contact-item" href="mailto:hello@artropods.com">
+    <span class="contact-spacer"></span>
+    <span class="contact-label">Email</span>
+    <span class="contact-handle">hello@artropods.com</span>
+  </a>
+  <a class="contact-item" href="https://www.instagram.com/artropods.films/" target="_blank">
+    <span class="contact-spacer"></span>
+    <span class="contact-label">Instagram</span>
+    <span class="contact-handle">@artropods.films</span>
+  </a>
+  <a class="contact-item" href="https://vimeo.com/user259585621?fl=pp&fe=sh" target="_blank">
+    <span class="contact-spacer"></span>
+    <span class="contact-label">Vimeo</span>
+    <span class="contact-handle">artropods</span>
+  </a>
+  <a class="contact-item" href="https://t.me/ohh_ula_la" target="_blank">
+    <span class="contact-spacer"></span>
+    <span class="contact-label">Telegram</span>
+    <span class="contact-handle">@artropods</span>
+  </a>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <span class="footer-copy">Artropods©</span>
+  <span class="footer-copy">Barcelona / London / Worldwide</span>
+</footer>
+
+
+<!-- ══════════════════════════════════════════════
+     PROJECT PAGES (fixed overlay)
+══════════════════════════════════════════════ -->
+
+<!-- ══ WHITE DEER ══ -->
+<div id="project-white-deer" class="project-page">
+
+  <div class="pp-topbar">
+    <a class="pp-works-link" href="#" onclick="closeProject(); return false;">Works</a>
+    <div class="pp-breadcrumb">
+      <span class="current">White Deer</span> /
+      <a href="#" onclick="switchProject('climb-to-heal'); return false;">Climb to Heal</a> /
+      <a href="#" onclick="switchProject('could-be-yours'); return false;">Could Be Yours</a>
+    </div>
+  </div>
+
+  <div class="pp-main">
+    <div class="pp-left">
+      <div class="pp-title">White Deer</div>
+      <div class="pp-tags">
+        Short Film<br>
+        Mixed Media<br>
+        Branded Content
+      </div>
+      <div class="pp-team">
+        Produced for Artlist<br>with Jovardi
+      </div>
+      <div class="pp-year">2026</div>
+    </div>
+    <div class="pp-center">
+      <div class="pp-desc-label">Hybrid Approach</div>
+      <div class="pp-desc">
+        <p>Every person on screen was filmed for real. Faces, bodies, performances — all practical.</p>
+        <p>Actors were shot in the studio, while the world around them was expanded through AI using imagery built from our own archive captured on Madeira island.</p>
+        <p>Nothing here was generated from thin air. Every image started with something physical, photographed, observed, or captured by us first.</p>
+        <p>We used AI the same way filmmaking has always used tools: to extend reality, build impossible worlds, and push images further without compromising on human presence or cinematic language.</p>
+        <p>The grounding is always real.<br>The fantasy is built on top.</p>
+      </div>
+    </div>
+    <div class="pp-right">
+      <img class="pp-main-img" src="01-WHITE-DEER/Poster.jpeg" alt="White Deer Poster">
+    </div>
+  </div>
+
+  <!-- Backstage: 4 vertical photos -->
+  <div class="pp-backstage-header">Backstage</div>
+  <div class="pp-backstage">
+    <img class="pp-backstage-img" src="01-WHITE-DEER/Photos/vertical/Edit-10.jpg" alt="">
+    <img class="pp-backstage-img" src="01-WHITE-DEER/Photos/vertical/Edit-30.jpg" alt="">
+    <img class="pp-backstage-img" src="01-WHITE-DEER/Photos/vertical/Edit-38.jpg" alt="">
+    <img class="pp-backstage-img" src="01-WHITE-DEER/Photos/vertical/Edit-53.jpg" alt="">
+  </div>
+
+  <!-- Gallery: 8 horizontal photos, 2 per row -->
+  <div class="pp-gallery">
+    <img class="pp-gallery-img" src="01-WHITE-DEER/Photos/horizontal/1%20Edit-14.jpg" alt="">
+    <img class="pp-gallery-img" src="01-WHITE-DEER/Photos/horizontal/2%20Edit-35.jpg" alt="">
+    <img class="pp-gallery-img" src="01-WHITE-DEER/Photos/horizontal/3%20Edit-01.jpg" alt="">
+    <img class="pp-gallery-img" src="01-WHITE-DEER/Photos/horizontal/4%20Edit-08.jpg" alt="">
+    <img class="pp-gallery-img" src="01-WHITE-DEER/Photos/horizontal/5%20Edit-44.jpg" alt="">
+    <img class="pp-gallery-img" src="01-WHITE-DEER/Photos/horizontal/6%20Edit-41.jpg" alt="">
+    <img class="pp-gallery-img" src="01-WHITE-DEER/Photos/horizontal/7%20Edit-19.jpg" alt="">
+    <img class="pp-gallery-img" src="01-WHITE-DEER/Photos/horizontal/8%20Edit-21.jpg" alt="">
+  </div>
+
+  <!-- Credits -->
+  <div class="pp-credits-wrap">
+    <div class="pp-credits-header">Credits</div>
+    <div class="pp-credits-grid">
+      <div class="pp-credits-col">
+        <div class="pp-credits-col-title">Production Crew</div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Director / Editor</span><span class="pp-credit-name">Jovardi</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">DoP / Producer</span><span class="pp-credit-name">Dmytro Nedria</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Story by</span><span class="pp-credit-name">Jovardi</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Written by</span><span class="pp-credit-name">Jovardi / Daniel Posada / Uria Gilad</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Producer / 1AD / Stylist</span><span class="pp-credit-name">Yuliia Pavliuk</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Production Manager</span><span class="pp-credit-name">Anatoliy Krapivin</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Gaffer</span><span class="pp-credit-name">Martin Morua</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Spark</span><span class="pp-credit-name">Carles Cross</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">1 AC</span><span class="pp-credit-name">Arkaitz Latorre-Pinedo</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Sound Technician</span><span class="pp-credit-name">Agus Balda</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">PA / Stylist Assistant</span><span class="pp-credit-name">Stanislav Ralko</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">MUA &amp; Hair</span><span class="pp-credit-name">Olha Garkovich</span></div>
+      </div>
+      <div class="pp-credits-col">
+        <div class="pp-credits-col-title">Talents &amp; Casting</div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Odelia</span><span class="pp-credit-name">Stacey Williams</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Dice</span><span class="pp-credit-name">Oliver Barrette</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Casting Director</span><span class="pp-credit-name">Julia Castillo-Mostova</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Casting Director</span><span class="pp-credit-name">Yarik Umanets</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Casting Studio</span><span class="pp-credit-name">YK Casting</span></div>
+        <br>
+        <div class="pp-credits-col-title">Tech Support</div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Rental House</span><span class="pp-credit-name">Unique Lenses</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Studio</span><span class="pp-credit-name">APE Studios</span></div>
+      </div>
+      <div class="pp-credits-col">
+        <div class="pp-credits-col-title">Post Production</div>
+        <div class="pp-credit-row"><span class="pp-credit-role">AI Artist</span><span class="pp-credit-name">Jovardi</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">AI Artist</span><span class="pp-credit-name">Dmytro Nedria</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Colourist</span><span class="pp-credit-name">Olga Corzhynska</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Original Score</span><span class="pp-credit-name">Roei Shpigler</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Sound Design</span><span class="pp-credit-name">Tal Avital</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Titles</span><span class="pp-credit-name">Illia Dolbniev</span></div>
+        <br>
+        <div class="pp-credits-col-title">Produced by</div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Production</span><span class="pp-credit-name">Artropods</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Powered by</span><span class="pp-credit-name">Artlist</span></div>
+      </div>
+    </div>
+    <div class="pp-credits-img-wrap">
+      <img class="pp-credits-img" src="01-WHITE-DEER/White%20Deer%20Credits%20v2.png" alt="White Deer Credits">
+    </div>
+  </div>
+
+</div><!-- /project-white-deer -->
+
+
+<!-- ══ CLIMB TO HEAL ══ -->
+<div id="project-climb-to-heal" class="project-page">
+
+  <div class="pp-topbar">
+    <a class="pp-works-link" href="#" onclick="closeProject(); return false;">Works</a>
+    <div class="pp-breadcrumb">
+      <a href="#" onclick="switchProject('white-deer'); return false;">White Deer</a> /
+      <span class="current">Climb to Heal</span> /
+      <a href="#" onclick="switchProject('could-be-yours'); return false;">Could Be Yours</a>
+    </div>
+  </div>
+
+  <div class="pp-main">
+    <div class="pp-left">
+      <div class="pp-title">Climb to Heal</div>
+      <div class="pp-tags">
+        Short Film<br>
+        Documentary
+      </div>
+      <div class="pp-team">
+        Produced for Mountain Seed Foundation<br>
+        Directed by Juliia Pavliuk
+      </div>
+      <div class="pp-year">2026</div>
+    </div>
+    <div class="pp-center">
+      <div class="pp-desc-label">About the Film</div>
+      <div class="pp-desc">
+        <p>A glimpse into the Healing Base Camp, a recovery space built by Mountain Seed Foundation for families affected by Russia's ongoing war against Ukraine.</p>
+        <p>Shot on-site in western Ukraine by a Ukrainian crew, the film follows a healing base camp built around mountains, movement, and human connection as a temporary space where families could breathe, recover, and feel safe again.</p>
+      </div>
+    </div>
+    <div class="pp-right pp-right--video">
+      <div class="pp-video-wrap">
+        <iframe src="https://player.vimeo.com/video/1192315460?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Climb to heal"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Backstage trio: poster | vertical | vertical (same height) -->
+  <div class="pp-backstage-header">Backstage</div>
+  <div class="pp-backstage-trio">
+    <img class="pp-backstage-trio-img" src="02-CLIMB-TO-HEAL/ClimbToHeal_Poster_FullRes.jpg" alt="Climb to Heal Poster">
+    <img class="pp-backstage-trio-img" src="02-CLIMB-TO-HEAL/bts/vertical%20block/1.JPG" alt="">
+    <img class="pp-backstage-trio-img" src="02-CLIMB-TO-HEAL/bts/vertical%20block/2.JPG" alt="">
+  </div>
+
+  <!-- BTS strip: seamless pairs, no crop -->
+  <div class="pp-strip">
+    <img class="pp-strip-img" src="02-CLIMB-TO-HEAL/bts/horizontal%20block/1.JPG" alt="">
+    <img class="pp-strip-img" src="02-CLIMB-TO-HEAL/bts/horizontal%20block/2.JPG" alt="">
+  </div>
+  <div class="pp-strip">
+    <img class="pp-strip-img" src="02-CLIMB-TO-HEAL/bts/horizontal%20block/3.JPG" alt="">
+    <img class="pp-strip-img" src="02-CLIMB-TO-HEAL/bts/horizontal%20block/4.JPG" alt="">
+  </div>
+  <div class="pp-strip">
+    <img class="pp-strip-img" src="02-CLIMB-TO-HEAL/bts/horizontal%20block/5.JPG" alt="">
+    <img class="pp-strip-img" src="02-CLIMB-TO-HEAL/bts/horizontal%20block/6.JPG" alt="">
+  </div>
+  <div class="pp-strip">
+    <img class="pp-strip-img" src="02-CLIMB-TO-HEAL/bts/horizontal%20block/7.JPG" alt="">
+    <img class="pp-strip-img" src="02-CLIMB-TO-HEAL/bts/horizontal%20block/8.JPG" alt="">
+  </div>
+
+  <!-- Credits -->
+  <div class="pp-credits-wrap">
+    <div class="pp-credits-header">Credits</div>
+    <div class="pp-credits-grid">
+      <div class="pp-credits-col">
+        <div class="pp-credits-col-title">Direction &amp; Production</div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Produced, Directed &amp; Edited</span><span class="pp-credit-name">Juliia Pavliuk</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Cinematographer</span><span class="pp-credit-name">Andriy Protsenko</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Cinematographer</span><span class="pp-credit-name">Yaroslav Pushkarchuk</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Production Assistant</span><span class="pp-credit-name">Polina Nelen</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Production Runner</span><span class="pp-credit-name">Anna Yaspel</span></div>
+      </div>
+      <div class="pp-credits-col">
+        <div class="pp-credits-col-title">Post Production</div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Sound Studio</span><span class="pp-credit-name">Bark &amp; Eclectic</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Sound Mixing</span><span class="pp-credit-name">Jak Melvin</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Color</span><span class="pp-credit-name">Evgeniy Moroz</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Titles</span><span class="pp-credit-name">Ilya Dolbniev</span></div>
+      </div>
+      <div class="pp-credits-col">
+        <div class="pp-credits-col-title">Special Thanks</div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Special Thanks</span><span class="pp-credit-name">Dmytro Nedria</span></div>
+        <div class="pp-credit-row"><span class="pp-credit-role">Foundation</span><span class="pp-credit-name">Mountain Seed Foundation</span></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /project-climb-to-heal -->
+
+<!-- Hover preview element -->
+<div id="project-preview"><img src="" alt=""></div>
+
+<script src="script.js"></script>
+</body>
+</html>
