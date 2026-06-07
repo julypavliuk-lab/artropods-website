@@ -317,7 +317,7 @@ footer {
 #splash-bg {
   position: absolute;
   inset: 0;
-  background: url("03%20FIRST%20PAGE%20/Bychko_Final.jpg") center center / cover no-repeat;
+  background: url("03%20FIRST%20PAGE/Bychko_Final.jpg") center center / cover no-repeat;
 }
 #splash-center {
   position: absolute;
